@@ -159,7 +159,6 @@ function contarHuespedes() {
  * @description Función general para generar una habitación
  */
 function addRoom() {
-    console.log(contadorHabitacion);
     contadorHabitacion++;
     let divHabitacion = document.createElement("div");
     divHabitacion.setAttribute("id", `room${contadorHabitacion}`)
@@ -231,7 +230,6 @@ function addRoom() {
  * @description Añade un selector por cada niño seleccionado
  */
 function addChildAge() {
-    console.log(this.parentNode.parentNode)
     for (let i = 1; i <= this.value; i++) {
         if (i == 1) {
             let labelChildAge = document.createElement("label");
@@ -261,7 +259,7 @@ function addChildAge() {
     for (j = parseInt(this.value) + 1; j <= maxChildren; j++) {
         if (j == 1)
             document.getElementById(`room${(this.parentNode.parentNode.getAttribute("id")).substring(4)}ChildLabel`).remove();
-        console.log(j)
+
         if (document.getElementById(`room${(this.parentNode.parentNode.getAttribute("id")).substring(4)}Child${j}`) != null) {
             document.getElementById(`room${(this.parentNode.parentNode.getAttribute("id")).substring(4)}Child${j}`).remove();
         }
@@ -284,7 +282,6 @@ function removeRoom(){
 var updateIds=idRoomDelete=>{
     
     for(let i=parseInt(idRoomDelete)+1;i<=contadorHabitacion;i++){
-        console.log(idRoomDelete);
         document.getElementById(`room${i}`).setAttribute("id",`room${i-1}`)
         document.getElementById(`enunciado${i}`).textContent=`${i-1}ª Habitación`;
         document.getElementById(`enunciado${i}`).setAttribute("id",`enunciado${i-1}`)
