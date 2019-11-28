@@ -17,12 +17,12 @@
       </ul>
       <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active bg-primary p-2" id="hoteles" role="tabpanel" aria-labelledby="hoteles-tab">
-              <form>
+              <form id="miFormulario">
                   <div class="form-row">
                       <div class="col">
                           <label for="destino">Destino o nombre del hotel</label>
                           <input type="text" id="destino" class="form-control"
-                              placeholder="¿Destino, resort u hotel?">
+                              placeholder="¿Destino, resort u hotel?" required>
                       </div>
                       <div class="col">
                           <label for="fecha">Fecha de registro</label>
@@ -32,16 +32,19 @@
                           <label for="noches">Noches</label>
                           <input type="text" id="noches" class="form-control">
                       </div>
-                      <div class="col">
+                      <div class="col" id="colHabitaciones">
                           <label for="habitaciones">Habitaciones y huéspedes</label>
                           <input type="text" id="habitaciones" class="form-control">
                       </div>
+                      <div class="col" id="enviar">
+                        <input class="btn btn-warning" type="submit" id="submit" value="Enviar" class="form-control">
+                    </div>
                   </div>
               </form>
+
           </div>
       </div>
   </div>
-  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>

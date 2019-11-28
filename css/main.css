@@ -2,3 +2,28 @@
     border:0;
     padding-top:10px;
 }
+
+
+.buttonClose {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: arial, sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    float: right;
+  }
+
+#divHabitaciones{
+    display: none;
+    position: relative;
+    padding-bottom: 1em;
+}
+
+#enviar{
+    margin-top:32px;
+}
+
+#submit{
+    margin-left:80px;
+}
